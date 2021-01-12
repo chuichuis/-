@@ -8,4 +8,32 @@
 <body>
     
 </body>
+<script>
+    var number = 2;
+        var obj = {
+            number: 4,
+            fn1: (function () {
+                this.number *= 2;
+
+                console.log(number);
+
+                number = number *2;
+                console.log(number);
+                
+                var number = 3;
+                return function () {
+                    console.log(this);
+                    this.number *= 2;
+                    number *= 3;
+                    alert("fn内"+number);
+                }
+            })()
+        };
+        var fn1 = obj.fn1;
+        alert("全局"+number);
+        fn1();
+        obj.fn1();
+        alert("window.number全局"+window.number);
+        alert("obj.number全局"+obj.number);
+</script>
 </html>
