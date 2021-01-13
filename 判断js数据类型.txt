@@ -1,0 +1,7 @@
+typeof
+instanceof
+constructor
+tostring
+
+
+
