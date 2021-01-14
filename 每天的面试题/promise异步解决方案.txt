@@ -1,5 +1,0 @@
-Promise对象代表一个异步操作，他表示一个在未来完成的异步操作
-有三种状态：  pending（进行中）  fulfilled（已成功） rejected（已失败）
-状态改变只有两种情况： pending==>fulfilled  ||  pending==>rejected
-一旦状态发生改变，就会一直保持这个状态，不再发生变化
-一旦状态改变，promise，then方法就会执行

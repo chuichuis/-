@@ -1,7 +1,0 @@
-typeof
-instanceof
-constructor
-tostring
-
-
-
